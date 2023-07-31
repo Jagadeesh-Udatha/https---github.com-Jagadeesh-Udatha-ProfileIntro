@@ -1,0 +1,128 @@
+.profile-pic {
+  width: 300px;
+  border-radius: 30px;
+}
+
+.profile {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+body
+{
+  background-color: rgb(66, 65, 65);
+}
+
+.text {
+  color:white;
+}
+
+.info
+{
+  font-size: 20px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  color: black;
+  margin: 5px 0px 10px 0px;
+  
+}
+
+.info-sub 
+{
+  margin-top:0;
+  margin-bottom: 5px;
+}
+.profile-info
+{
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-33%);
+  background-color: white;
+  color: black;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+
+.profile:hover 
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-63%);
+  filter: blur(1.5px);
+}
+
+
+.logo 
+{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  position: absolute;
+  top:55%;
+  left:50%;
+  transform: translate(-50%,-0%);
+  opacity: 0;
+  transition: 1s;
+  
+}
+
+.logo-edit
+{
+  width:50px;
+  height: 50px;
+}
+
+.logo-hover1, .logo-hover2, .logo-hover3
+{
+  position: relative;
+}
+
+.hover-time
+{
+  position:absolute;
+  margin-left:10px;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  opacity:0;
+  font-size: 12px;
+}
+.main:hover .profile-info
+{
+  opacity:1;
+}
+
+.main:hover .logo{
+  opacity :1;
+}
+
+
+
+.logo-hover1:hover  .hover-time{
+  opacity:1;
+}
+
+.logo-hover2:hover  .hover-time{
+  opacity:1;
+}
+
+.logo-hover3:hover  .hover-time{
+  opacity:1;
+}
+
